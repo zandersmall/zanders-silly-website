@@ -29,10 +29,13 @@ svg{
   --color-pink-light: #e5a1aa;
   --color-green-light: #7AD0AC;
   --color-blue-light: #8395CD;
+  --color-link-light: #8395CD;
 
   /* Dark Theme Variables */
   --color-text-dark: #FAF4E5;
   --color-background-dark: #8395CD;
+  --color-link-dark: #e8dbba;
+
 }
 
 .light-theme{
@@ -41,6 +44,7 @@ svg{
   --color-pink: var(--color-pink-light);
   --color-green: var(--color-green-light);
   --color-blue: var(--color-blue-light);
+  --color-link: var(--color-link-light);
 }
 
 .dark-theme{
@@ -49,17 +53,11 @@ svg{
   --color-pink: var(--color-text-dark);
   --color-green: var(--color-text-dark);
   --color-blue: var(--color-text-dark);
+  --color-link: var(--color-link-dark);
 }
 
-a:link {
-  color: var(--color-blue-light);
-  text-decoration: none;
-  font-weight: 500;
-}
-
-/* visited link */
-a:visited {
-  color: var(--color-blue-light);
+a {
+  color: var(--color-link);
   text-decoration: none;
   font-weight: 500;
 }
@@ -356,7 +354,7 @@ a:visited {
   font-size: 40px;
   font-weight: 500;
   text-transform: uppercase;
-  color: var(--color-blue-light);
+  color: var(--color-text);
 }
 
 .section-text{
