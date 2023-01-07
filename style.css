@@ -51,6 +51,19 @@ svg{
   --color-blue: var(--color-text-dark);
 }
 
+a:link {
+  color: var(--color-blue-light);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* visited link */
+a:visited {
+  color: var(--color-blue-light);
+  text-decoration: none;
+  font-weight: 500;
+}
+
 /* Experience --------------------------------------------- */
 
 .experience{
@@ -174,7 +187,7 @@ svg{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
+  width: 50%;
 }
 
 .arrow-svg-wrapper{
@@ -331,12 +344,41 @@ svg{
   margin-top: 64px;
   color: var(--color-text);
 }
+.technologies{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+.section-heading-title{
+  margin-bottom: 10px;
+  display: block;
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--color-blue-light);
+}
 
 .section-text{
   line-height: 2;
   margin-top: 18px;
   font-size: 16px;
   color: var(--color-text);
+}
+.special-thanks{
+  line-height: 2;
+  margin-top: 18px;
+  font-size: 16px;
+  position: absolute;
+  bottom: 50px;
+  color: var(--color-text);
+}
+
+.section-text-highlight{
+  line-height: 2;
+  margin-top: 18px;
+  font-size: 16px;
+  color: var(--color-green-light);
 }
 
 /* Fancy Decoration Part of Section */

@@ -156,7 +156,7 @@ export default class Controls {
                         },
                         "same"
                     );
-
+                
                 // Third section -----------------------------------------
                 this.thirdMoveTimeline = new GSAP.timeline({
                     scrollTrigger: {
@@ -167,8 +167,22 @@ export default class Controls {
                         invalidateOnRefresh: true,
                     },
                 }).to(this.camera.orthographicCamera.position, {
+                    y: 6,
+                    x: 0,
+                });
+                
+                // Fourth section -----------------------------------------
+                this.fourthMoveTimeline = new GSAP.timeline({
+                    scrollTrigger: {
+                        trigger: ".fourth-move",
+                        start: "top top",
+                        end: "bottom bottom",
+                        scrub: 0.6,
+                        invalidateOnRefresh: true,
+                    },
+                }).to(this.camera.orthographicCamera.position, {
                     y: 1.5,
-                    x: -4.1,
+                    x: 0.5,
                 });
             },
 
@@ -233,10 +247,10 @@ export default class Controls {
                         "same"
                     );
 
-                // Third section -----------------------------------------
-                this.thirdMoveTimeline = new GSAP.timeline({
+                // Four section -----------------------------------------
+                this.fourthMoveTimeline = new GSAP.timeline({
                     scrollTrigger: {
-                        trigger: ".third-move",
+                        trigger: ".fourth-move",
                         start: "top top",
                         end: "bottom bottom",
                         scrub: 0.6,
@@ -348,10 +362,10 @@ export default class Controls {
                         "same"
                     );
 
-                // Third section -----------------------------------------
-                this.thirdCircle = new GSAP.timeline({
+                // Fourth section -----------------------------------------
+                this.fourthCircle = new GSAP.timeline({
                     scrollTrigger: {
-                        trigger: ".third-move",
+                        trigger: ".fourth-move",
                         start: "top top",
                         end: "bottom bottom",
                         scrub: 0.6,
@@ -365,7 +379,7 @@ export default class Controls {
                 // Mini Platform Animations
                 this.secondPartTimeline = new GSAP.timeline({
                     scrollTrigger: {
-                        trigger: ".third-move",
+                        trigger: ".fourth-move",
                         start: "center center",
                     },
                 });
