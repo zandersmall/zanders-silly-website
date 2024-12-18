@@ -2,11 +2,11 @@ export default [
     {
         name: "room",
         type: "glbModel",
-        path: "/models/Boko Tutorial.glb",
+        path: "/models/Zander Room.glb",
     },
     {
         name: "screen",
         type: "videoTexture",
-        path: "/textures/overwatch play.mp4",
+        path: "/textures/coding2.mp4",
     },
 ];
